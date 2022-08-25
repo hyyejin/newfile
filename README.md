@@ -1,3 +1,5 @@
 # newfile
--chapter 1
+-chpter1
+ -Ex1-1: 변수선언
+ 
  
