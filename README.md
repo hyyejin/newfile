@@ -60,8 +60,8 @@
   
 ### **chapter6 : 프로토타입**
   * 생성자 함수를 new 연산자와 함게 호출하면 Constructor에서 정의된 내용을 바탕으로 새로운 instance 생성   
-  이 isntance에는 --proto--라는 Constructor의 prototype 프로퍼티를 참조하는 프로퍼티가 자동으로 부여   
-  --proto--는 생략 가능한 속성, 따라서 instance는 Constructor.prototype의 메서드를 자신의 메서드처럼 호출 가능.
+    이 isntance에는 --proto--라는 Constructor의 prototype 프로퍼티를 참조하는 프로퍼티가 자동으로 부여   
+    --proto--는 생략 가능한 속성, 따라서 instance는 Constructor.prototype의 메서드를 자신의 메서드처럼 호출 가능.
   ![img](https://user-images.githubusercontent.com/111478153/187056262-4439f4fc-570f-42c7-a9bc-649f52db0ff7.png)
   
 ### **chapter7 : 클래스** 
