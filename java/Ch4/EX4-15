@@ -1,0 +1,17 @@
+var addCoffe = function (name){
+    return function (prevName){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                var newName = prevNAme ? (prevName+', '+name) : name;
+                console.log(newName);
+                resolve(newName);
+            }, 500);
+        });
+    };
+};
+addCoffe('에스프레소')()
+    .then(addCoffe('아메리카노'))
+    .then(addCoffe('카페모카'))
+    .then(addCoffe('카페라떼'));
+
+
