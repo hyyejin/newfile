@@ -1,0 +1,12 @@
+(function (){
+    var a =0;
+    var intervalID = null;
+    var inner = function(){
+        if (++a >=10){
+            clearInterval(intervalID);
+        }
+        console.log(a);
+    };
+    intervalID = setInterval(inner, 1000);
+})();
+
