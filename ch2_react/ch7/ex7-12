@@ -1,0 +1,15 @@
+var extendClass2 = (function(){
+    var Bride = function(){};
+    return function (SuperClass,SubClass,subMethods){
+        Bride.prototype = SuperClass.prototype;
+        SubClass.prototype = new Bride();
+        SubClass.prototype.constructor = SubClass;
+        if(subMethods){
+            for (var method in subMethods){
+                SubClass.prototype[method] = subMethods[method];
+            }
+        }
+        Object.freeze(SubClass.prototype);
+        return SubClass;
+    };
+})();
