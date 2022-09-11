@@ -1,8 +1,0 @@
-var obj = {
-    a: 1,
-    b: {
-        c: null,
-        d: [1,2]
-    }
-};
-var obj2 = copyObjectDeep(obj);
