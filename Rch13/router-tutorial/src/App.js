@@ -11,11 +11,8 @@ const App = () => {
     </div>
   );
 };
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    console.log('ServiceWorker registration successful with scope: ', registration.active);
-  });
-};
 
 
 export default App;
+
+

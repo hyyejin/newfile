@@ -41,13 +41,3 @@
     -->
   </body>
 </html>
-<script> 
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('sw-cached-site.js', function() {
-      navigator.serviceWorker.register('sw.js', {
-        scope: '/',
-      });
-    });
-  } 
-  window.process = { env: { NODE_ENV: 'production' } };
-</script> 
