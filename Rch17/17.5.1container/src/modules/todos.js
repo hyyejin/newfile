@@ -50,18 +50,18 @@ export const changeInput = input => ({
       case CHANGE_INPUT:
         return {
           ...state,
-             input: action.input
+          input: action.input
         };
       case INSERT:
         return {
           ...state,
-             todos: state.todos.concat(action.todo)
+          todos: state.todos.concat(action.todo)
         };
       case TOGGLE:
         return {
           ...state,
-            todos: state.todos.map(todo =>
-          todo.id === action.id ? { ...todo, done: !todo.done } : todo
+          todos: state.todos.map(todo =>
+            todo.id === action.id ? { ...todo, done: !todo.done } : todo
           )
         };
       case REMOVE:
