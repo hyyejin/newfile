@@ -3,8 +3,8 @@ import { startLoading, finishLoading } from '../modules/loading';
 
 
 export default function createRequestSaga(type, request) {
-  const SUCCESS = </span><span class="co49">${</span><span class="cd2 co34">type</span><span class="co33">}</span><span class="cd2 co31">_SUCCESS;
-  const FAILURE = </span><span class="co49">${</span><span class="cd2 co34">type</span><span class="co33">}</span><span class="cd2 co31">_FAILURE;
+  const SUCCESS = `${type}_SUCCESS`;
+  const FAILURE = `${type}_FAILURE`;
 
 
 
