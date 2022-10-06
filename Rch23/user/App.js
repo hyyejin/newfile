@@ -1,2 +1,2 @@
-const user = new User({ username: 'velopert' });
+const user = new user({ username: 'velopert' });
 user.setPassword('mypass123');
