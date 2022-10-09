@@ -9,13 +9,12 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "parser": "@babel/eslint-parser",
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "rules": {
-        "no-unused-vars": "off",
-        "no-console": "off"
+        "no-unused-vars": "warn",
+        "no-console": "off"  
     }
 }
