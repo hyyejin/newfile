@@ -23,6 +23,7 @@ function loadUser() {
     console.log('localStore is not working');
   }
 }
+
 sagaMiddleware.run(rootSaga);
 loadUser();
 
